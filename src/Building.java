@@ -6,14 +6,14 @@
  * Usage / Issues: not available
  *-----------------------------------------------------
  */
-public interface building {
+public interface Building {
 
     //Declaring the constants (what all buildings have)
     String getName();
     String getLocation();
-    double width = 0.00;
-    double length = 0.00;
-    double height = 0.00;
+    double getWidth();
+    double getLength();
+    double getHeight();
 
     //Declaring the abstract methods
     void whatDo();
