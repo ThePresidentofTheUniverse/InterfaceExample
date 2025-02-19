@@ -11,10 +11,11 @@ public class Store implements Building {
     private int width;
     private int length;
     private int height;
+    private String[] merch = {};
 
 
     //constructor
-    public Store(String name, String storeType,String location, int employees, String genMerch, int openTime, int closeTime,int width,int length,int height) {
+    public Store(String name, String storeType,String location, int employees, String genMerch, int openTime, int closeTime,int width,int length,int height,String[] merch) {
         this.name = name;
         this.storeType = storeType;
         this.location = location;
@@ -25,6 +26,7 @@ public class Store implements Building {
         this.width = width;
         this.length = length;
         this.height = height;
+        this.merch = merch;
     }
     //Implement methods
     @Override
@@ -52,8 +54,9 @@ public class Store implements Building {
         //The boolean that assists with phrasing.
         String empAMT = employees > 1 ? " are " + employees + " employees" : " is " + employees + " employee";
         //The full sentences.
-        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere"+ empAMT + " that usually sell " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
+        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere"+ empAMT + " that might sell you a " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
         System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n");
+        System.out.println("There merchandise includes: " + merch);
     }
 
 
