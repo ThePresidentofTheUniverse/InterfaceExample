@@ -16,6 +16,6 @@ public interface Building {
     double getHeight();
 
     //Declaring the abstract methods
-    void whatDo();
+    void whatIs();
 
 }

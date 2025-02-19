@@ -3,19 +3,28 @@ public class Store implements Building {
     //fields for a store
     private String name;
     private String storeType;
+    private String location;
     private int employees;
     private String genMerch;
     private int openTime;
     private int closeTime;
+    private int width;
+    private int length;
+    private int height;
+
 
     //constructor
-    public Store(String name, String storeType, int employees, String genMerch, int openTime, int closeTime) {
+    public Store(String name, String storeType,String location, int employees, String genMerch, int openTime, int closeTime,int width,int length,int height) {
         this.name = name;
         this.storeType = storeType;
+        this.location = location;
         this.employees = employees;
         this.genMerch = genMerch;
         this.openTime = openTime;
         this.closeTime = closeTime;
+        this.width = width;
+        this.length = length;
+        this.height = height;
     }
     //Implement methods
     @Override
@@ -24,23 +33,24 @@ public class Store implements Building {
     }
     @Override
     public String getLocation() {
-        return "";
+        return location;
     }
     @Override
     public double getWidth() {
-        return 0;
+        return width;
     }
     @Override
     public double getLength() {
-        return 0;
+        return length;
     }
     @Override
     public double getHeight() {
-        return 0;
+        return height;
     }
     @Override
-    public void whatDo() {
-        System.out.println(name + " is a " + storeType);
+    public void whatIs() {
+        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThey usually sell " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
+        System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n\n");
     }
 
 
