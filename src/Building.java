@@ -3,7 +3,7 @@
  * Author: Nolan Abbott
  * Date: [02/18/2025]
  * Description: [Curious to see what can be done here]
- * Usage / Issues: not available
+ * Usage / Issues: This program is an example of how an interface can be used.
  *-----------------------------------------------------
  */
 public interface Building {

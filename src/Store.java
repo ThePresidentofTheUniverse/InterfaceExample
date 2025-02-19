@@ -49,8 +49,10 @@ public class Store implements Building {
     }
     @Override
     public void whatIs() {
-        String empAMT = employees > 1 ? "" : "";
-        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere are " + employees + " usually sell " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
+        //The boolean that assists with phrasing.
+        String empAMT = employees > 1 ? " are " + employees + " employees" : " is " + employees + " employee";
+        //The full sentences.
+        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere"+ empAMT + " that usually sell " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
         System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n");
     }
 
