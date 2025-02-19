@@ -6,13 +6,16 @@
  * Usage / Issues: not available
  *-----------------------------------------------------
  */
-public interface unit {
+public interface building {
 
-    //Declaring the constants
+    //Declaring the constants (what all buildings have)
     String getName();
-    int soldierAMT = 0;
-
+    String getLocation();
+    double width = 0.00;
+    double length = 0.00;
+    double height = 0.00;
 
     //Declaring the abstract methods
+    void whatDo();
 
 }
