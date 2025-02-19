@@ -6,9 +6,12 @@
  * Usage / Issues: not available
  *-----------------------------------------------------
  */
-public interface element {
+public interface unit {
 
     //Declaring the constants
+    String getName();
+    int soldierAMT = 0;
+
 
     //Declaring the abstract methods
 
