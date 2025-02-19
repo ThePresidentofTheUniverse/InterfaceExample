@@ -50,7 +50,7 @@ public class Store implements Building {
     @Override
     public void whatIs() {
         System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThey usually sell " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
-        System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n\n");
+        System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n");
     }
 
 

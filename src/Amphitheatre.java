@@ -47,8 +47,9 @@ public class Amphitheatre implements Building {
     }
     @Override
     public void whatIs() {
-        System.out.println("The " + name + " is going to be showing a " + upcomingEvent + " event at " + eventTime + ". There " + hasConcessions + " concessions.\n" +
+        String condCon = (hasConcessions ? "will be" : "are no");
+        System.out.println("The " + name + " is going to be showing a " + upcomingEvent + " event at " + eventTime + ". There " + condCon + " concessions.\n" +
                 "The building itself is " + width + " in width, " + length + " in length, " + height + " in height and can hold up to " + seats + " people.\n" +
-                "It can be found in the " + location + ".");
+                "It can be found in the " + location + ".\n");
     }
 }
