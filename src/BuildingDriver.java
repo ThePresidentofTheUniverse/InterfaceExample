@@ -13,7 +13,7 @@ public class BuildingDriver {
         Building house1 = new House("Marfusha's Apartment","Eastern District", "Marfusha",2,30,20,50,true);
         Building house2 = new House("Dochka's Home", "Western District", "Dochka", 1, 45, 45, 60, false);
 
-        // Allows user to clock through each item
+        // Allows user to click through each item
         store1.whatIs();
         scan.nextLine();
 
