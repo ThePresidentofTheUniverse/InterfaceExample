@@ -54,7 +54,7 @@ public class MarketPlace implements Building{
         }
 
         //Helps with phrasing
-        String varyH = height == 0 ? "it's height is too hard to tell." : height + "in height.";
+        String varyH = height == 0 ? "each stand varies in height." : height + "in height.";
         //The full sentences
         System.out.println("There is a " + name + "that lives in the " + location + ". There are about " + standAMT + " vendors there.\n" +
                             "Some are " + standTypes[standValue1] + " while others are " + standTypes[standValue2] + ".");
