@@ -20,7 +20,7 @@ public class Store implements Building {
 
 
     //constructor
-    public Store(String name, String storeType,String location, int employees, String genMerch, int openTime, int closeTime,int width,int length,int height, String item0, String item1, String item2, String item3) {
+    public Store(String name, String storeType, String location, int employees, String genMerch, int openTime, int closeTime, int width, int length, int height, String item0, String item1, String item2, String item3) {
         this.name = name;
         this.storeType = storeType;
         this.location = location;
@@ -36,23 +36,28 @@ public class Store implements Building {
         this.item2 = item2;
         this.item3 = item3;
     }
+
     //Implement methods
     @Override
     public String getName() {
         return name;
     }
+
     @Override
     public String getLocation() {
         return location;
     }
+
     @Override
     public double getWidth() {
         return width;
     }
+
     @Override
     public double getLength() {
         return length;
     }
+
     @Override
     public double getHeight() {
         return height;
@@ -67,9 +72,9 @@ public class Store implements Building {
         String empAMT = employees > 1 ? " are " + employees + " employees" : " is " + employees + " employee";
 
         //Gives us a random value.
-        int merchValue = randMerch.nextInt(0,4);
+        int merchValue = randMerch.nextInt(0, 4);
 
-        switch (merchValue){
+        switch (merchValue) {
 
             case 0:
                 genMerch = item0;
@@ -86,10 +91,11 @@ public class Store implements Building {
             default:
                 genMerch = "interesting item";
                 break;
-        };
+        }
+        ;
 
         //The full sentences.
-        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere"+ empAMT + " that might sell you a " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
-        System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n");
+        System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere" + empAMT + " that might sell you a " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
+        System.out.println("The store's dimensions are " + width + " in width, " + length + " in length and " + height + " in height.\n");
     }
 }
