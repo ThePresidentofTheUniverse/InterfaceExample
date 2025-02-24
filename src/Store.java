@@ -88,7 +88,6 @@ public class Store implements Building {
                 break;
         };
 
-
         //The full sentences.
         System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere"+ empAMT + " that might sell you a " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
         System.out.println("The store's dimensions are " +width+ " in width, " + length + " in length and " + height + " in height.\n");
