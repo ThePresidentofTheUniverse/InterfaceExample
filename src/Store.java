@@ -71,9 +71,9 @@ public class Store implements Building {
         //The boolean that assists with phrasing.
         String empAMT = employees > 1 ? " are " + employees + " employees" : " is " + employees + " employee";
 
+
         //Gives us a random value.
         int merchValue = randMerch.nextInt(0, 4);
-
         switch (merchValue) {
 
             case 0:
@@ -92,8 +92,6 @@ public class Store implements Building {
                 genMerch = "interesting item";
                 break;
         }
-        ;
-
         //The full sentences.
         System.out.println(name + " is a " + storeType + " located in the " + location + ".\nThere" + empAMT + " that might sell you a " + genMerch + " and are open from " + openTime + " to " + closeTime + ".");
         System.out.println("The store's dimensions are " + width + " in width, " + length + " in length and " + height + " in height.\n");
