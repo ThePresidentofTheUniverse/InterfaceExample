@@ -47,10 +47,10 @@ public class House implements Building {
     public void whatIs() {
         //The booleans that help with phrasing.
         String homeType = (aboveStore ? "an apartment" : "a house");
-        String pluralAMT = (peopleAMT > 1 ? " people.\n" : "; just themselves.\n");
+        String pluralAMT = (peopleAMT > 1 ? peopleAMT + " people.\n" : "just themselves.\n");
         String homeLoc = (aboveStore ? "above their store " : "somewhere ");
         // The full sentences.
-        System.out.println(owner + " owns " + homeType + " that houses " + peopleAMT + pluralAMT + "They live " + homeLoc + "in the " + location + ".\n" +
+        System.out.println(owner + " owns " + homeType + " that houses "  + pluralAMT + "They live " + homeLoc + "in the " + location + ".\n" +
                 "Their home is about " + width + " in width, " + length + " in length and " + height + " in height.\n");
     }
 }
