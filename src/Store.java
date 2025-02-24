@@ -66,6 +66,7 @@ public class Store implements Building {
         //The boolean that assists with phrasing.
         String empAMT = employees > 1 ? " are " + employees + " employees" : " is " + employees + " employee";
 
+        //Gives us a random value.
         int merchValue = randMerch.nextInt(0,4);
 
         switch (merchValue){
