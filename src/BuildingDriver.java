@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
+// Running a test with how an enumeration can work
+enum CleanUp {ERASE}
+
 public class BuildingDriver {
     public static void main(String[] args) {
+        CleanUp clear = CleanUp.ERASE;
+
         //Makes it easier to read each item
         Scanner scan = new Scanner(System.in);
         String userInput;
@@ -31,6 +36,7 @@ public class BuildingDriver {
             System.out.println("5 - Not-Roman Colosseum");
             System.out.println("6 - Hidden Orchard Theatre");
             System.out.println("7 - Marketplace");
+            System.out.println("\nTo close out of program, type \"exit\".");
             userInput = scan.nextLine();
 
             // very basic switch statement that could be made fancier.
@@ -195,6 +201,11 @@ public class BuildingDriver {
                     {
                         System.out.println("\nUnknown input detected.\n");
                     }
+                break;
+            }
+
+            if (userInput.equalsIgnoreCase("exit")){
+                System.out.println("Closing the program...");
                 break;
             }
         }
