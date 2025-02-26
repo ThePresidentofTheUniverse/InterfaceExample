@@ -12,6 +12,7 @@ public class BuildingDriver {
         Building amphitheatre2 = new Amphitheatre("Hidden Orchard", "theatrical", "Eastern District", false, 2000, 1800, 100, 100, 50);
         Building house1 = new House("Marfusha's Apartment","Eastern District", "Marfusha",2,30,20,50,true);
         Building house2 = new House("Dochka's Home", "Western District", "Dochka", 1, 45, 45, 60, false);
+        Building marketPlace1 = new MarketPlace("Marketplace","Western District", 100, 250,250,0);
 
         // Allows user to click through each item
         store1.whatIs();
@@ -31,5 +32,9 @@ public class BuildingDriver {
 
         amphitheatre2.whatIs();
         scan.nextLine();
+
+        marketPlace1.whatIs();
+        scan.nextLine();
+
     }
 }

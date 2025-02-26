@@ -1,5 +1,6 @@
 It seems like elements will not work.
 
 We are now doing buildings, specifically ancient.
-From my understanding of how this should work:
+The basic concept shown below is how you can understand an interface:
+
 Building -> Building Type -> Building Contents
